@@ -358,6 +358,7 @@ window.onload = function() {
     for (i = 0; i < 9; i++) document.querySelectorAll("td")[i].innerHTML = "";
     document.querySelector("table").style.fontSize = "0";
     count = 0;
+    turn = 0;
     document.querySelector("table").style.setProperty("pointer-events", "auto");
   };
 };
