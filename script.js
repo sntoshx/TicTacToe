@@ -59,6 +59,12 @@ window.onload = function() {
     let elem2 = document.querySelector(".game-container");
     elem2.style.animation = "fade .1s linear both";
     elem2.style.setProperty("z-index", 1);
+    document
+      .querySelector(".container-body")
+      .style.setProperty("pointer-events", "none");
+    document
+      .querySelector(".game-container")
+      .style.setProperty("pointer-events", "auto");
   };
 
   circle = () => {
@@ -68,6 +74,12 @@ window.onload = function() {
     let elem2 = document.querySelector(".game-container");
     elem2.style.animation = "fade .1s linear both";
     elem2.style.setProperty("z-index", 1);
+    document
+      .querySelector(".container-body")
+      .style.setProperty("pointer-events", "none");
+    document
+      .querySelector(".game-container")
+      .style.setProperty("pointer-events", "auto");
   };
 
   userFill = param => {
@@ -325,10 +337,16 @@ window.onload = function() {
     document
       .querySelector(".container-body")
       .style.setProperty("animation", "fade .2s linear both");
+    document
+      .querySelector(".container-body")
+      .style.setProperty("pointer-events", "auto");
 
     document
       .querySelector(".game-container")
       .style.setProperty("z-index", "-1");
+    document
+      .querySelector(".game-container")
+      .style.setProperty("pointer-events", "none");
 
     for (i in matrix)
       document

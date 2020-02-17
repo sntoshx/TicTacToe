@@ -464,12 +464,21 @@ body {
 }
 
 @media (max-width: 500px) {
+  
+  nav img{
+    width:6vw;
+    height:6vw;
+  }
+
+  .heading{
+    font-size:9.5vw;
+  }
   .prompt {
     width: 50vh;
   }
   .message {
     width: 50vh;
-    font-size: 11vw;
+    font-size: 10vw;
   }
 
    .prompt img{
