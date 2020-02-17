@@ -1,7 +1,7 @@
 let turn = 0;
 let choice;
 let count = 0;
-
+screen.orientation.lock("natural");
 // let p1name = prompt("Enter name of first player: ");
 // let p2name = prompt("Enter name of second player: ");
 // p1name = p1name.toLowerCase();
