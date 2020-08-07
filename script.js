@@ -1,20 +1,6 @@
 let turn = 0;
 let choice;
 let count = 0;
-screen.orientation.lock("natural");
-// let p1name = prompt("Enter name of first player: ");
-// let p2name = prompt("Enter name of second player: ");
-// p1name = p1name.toLowerCase();
-// p2name = p2name.toLowerCase();
-// p1name = capitalize(p1name);
-// p2name = capitalize(p2name);
-// console.log(p1name);
-// console.log(p2name);
-// capitalize = str1 => {
-//   str1 = str1[0].toUpperCase() + str1.slice(1);
-//   return str1;
-// };
-
 let matrix = {
   "zero-zero": false,
   "zero-one": false,
@@ -24,9 +10,8 @@ let matrix = {
   "one-two": false,
   "two-zero": false,
   "two-one": false,
-  "two-two": false
+  "two-two": false,
 };
-
 let matrix1 = {
   "zero-zero": false,
   "zero-one": false,
@@ -36,9 +21,8 @@ let matrix1 = {
   "one-two": false,
   "two-zero": false,
   "two-one": false,
-  "two-two": false
+  "two-two": false,
 };
-
 let matrix2 = {
   "zero-zero": false,
   "zero-one": false,
@@ -48,10 +32,10 @@ let matrix2 = {
   "one-two": false,
   "two-zero": false,
   "two-one": false,
-  "two-two": false
+  "two-two": false,
 };
 
-window.onload = function() {
+window.onload = function () {
   cross = () => {
     let elem = document.querySelector(".container-body");
     elem.style.animation = "fade-out .2s linear both";
@@ -82,7 +66,7 @@ window.onload = function() {
       .style.setProperty("pointer-events", "auto");
   };
 
-  userFill = param => {
+  userFill = (param) => {
     if (turn == 0) {
       if (matrix[param] == false) {
         let img = document.createElement("img");
