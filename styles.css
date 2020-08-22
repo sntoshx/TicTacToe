@@ -419,6 +419,11 @@ body {
     justify-content: center;
     transform: translate(-50%, -50%);
   }
+
+  .landscape-phone-error-screen {
+    display: none;
+  }
+
   .one {
     /* background-color: green; */
     -webkit-animation: wobble-hor-bottom 1.8s both infinite;
@@ -494,5 +499,32 @@ body {
   .game-container img {
     width: 11vw;
     transition: 0.2s ease-in all;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+  html {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: none;
+  }
+
+  .landscape-phone-error-screen {
+    background: rgb(56, 56, 56);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1232132132132121321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landscape-phone-error-screen span {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-size: 3vw;
+    font-family: monospace;
+    width: 70vw;
   }
 }
